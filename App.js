@@ -8,7 +8,23 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 function CoachScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home!</Text>
+      <Text>Coaching Screen!</Text>
+    </View>
+  );
+}
+
+function LibraryScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Library!</Text>
+    </View>
+  );
+}
+
+function TrackingScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Tracking!</Text>
     </View>
   );
 }
@@ -35,7 +51,13 @@ export default function App() {
               iconName = focused
                 ? 'ios-information-circle'
                 : 'ios-information-circle-outline';
-            } else if (route.name === 'Settings') {
+            } else if (route.name === 'Library') {
+              iconName = focused ? 'ios-list-outline' : 'ios-list';
+            }
+            else if (route.name === 'Tracking') {
+              iconName = focused ? 'ios-list-outline' : 'ios-list';
+            }
+            else if (route.name === 'Settings') {
               iconName = focused ? 'ios-list-outline' : 'ios-list';
             }
 
@@ -49,6 +71,8 @@ export default function App() {
         }}
       >
         <Tab.Screen name="Sasha" component={CoachScreen} />
+        <Tab.Screen name="Library" component={LibraryScreen} />
+        <Tab.Screen name="Tracking" component={TrackingScreen} />
         <Tab.Screen name="Settings" component={SettingsScreen} />
       </Tab.Navigator>
     </NavigationContainer>
