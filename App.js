@@ -49,16 +49,16 @@ export default function App() {
 
             if (route.name === 'Sasha') {
               iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
+                ? 'chatbubbles'
+                : 'chatbubbles-outline';
             } else if (route.name === 'Library') {
-              iconName = focused ? 'ios-list-outline' : 'ios-list';
+              iconName = focused ? 'library' : 'library-outline';
             }
             else if (route.name === 'Tracking') {
-              iconName = focused ? 'ios-list-outline' : 'ios-list';
+              iconName = focused ? 'analytics' : 'analytics-outline';
             }
             else if (route.name === 'Settings') {
-              iconName = focused ? 'ios-list-outline' : 'ios-list';
+              iconName = focused ? 'menu' : 'menu-outline';
             }
 
             // You can return any component that you like here!
