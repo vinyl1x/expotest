@@ -8,7 +8,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 function Header(){
   return(
     <Header
-      centerComponent = {{text: 'Prime For Life'}}
+      centerComponent = {{text: 'Prime For All Life'}}
     /> 
   )
 }
